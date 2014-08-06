@@ -36,6 +36,12 @@ Default: null
 
 This option accepts a function which takes one argument (filename) and returns a string which will be used as the key for the object.  The example below stores all json data on the default myjson namespace in capital letters.
 
+#### commonJS
+Type: `Boolean`
+Default: false
+
+If you also want to use the exported file in node, this will add `module.exports = your-namespace` to the output.
+
 ```js
 options: {
   processName: function(filename) {
